@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}My portfolio{% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static "css/mypage_base.css" %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <a href="/" class="logo">My portfolio</a>
+
+            <a href="{% url "portfolio:home" %}">Home</a>|
+            <a href="{% url "portfolio:about-us" %}">About</a>|
+            <a href="{% url "portfolio:contact" %}">Contact</a>|
+            <a href="{% url "portfolio:categories" %}">Portfolio</a>|
+
+        </div>
+
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
