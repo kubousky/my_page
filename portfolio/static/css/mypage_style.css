@@ -8,7 +8,7 @@ body {
 
 .btn-group{
     float: right;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .btn-group a{
@@ -54,18 +54,8 @@ body {
 
 /* ################################  footer   */ 
 .footer{
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    padding-top: 10px;
-    font-size: 13px;
-    background-color: black;
-    color:#FAFAFA;
-}
-
-
-.footer{
     width: 85%;
+    margin-left: 40px;
     height: auto;
     font-size: 13px;
     background-color: black;
@@ -107,6 +97,7 @@ body {
 }
 
 @media only screen and (max-width: 665px) {
+    .footer{margin-left: 0px;}
     .btn-group #invisible_left{padding:0;border:none;}
     .btn-group #invisible_right{padding:0;border:none;}
 }
