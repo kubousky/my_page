@@ -11,9 +11,18 @@
                 <ul>
 
                 {% for c in categories %}
-                        <li {% if category.slug == c.slug %}class="selected"{% endif %}>
-                        <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
-                        </li>
+                        <!-- <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                        <a href="{{ c.get_absolute_url }}">{{ c. }}</a>
+                        </li> -->
+                        <div class="item">
+                                {% load thumbnail %}
+                                {% thumbnail c.image "x150" as cim %}
+                                <a href="{{ c.get_absolute_url }}">
+                                        <img src="{% if cim %}{{ cim.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+                                </a>
+                                <!-- <a href="{{ c.get_absolute_url }}">{{ c.name }}</a> -->
+                                {% endthumbnail %}
+                        </div>
                 {% endfor %}
                 </ul>
         </div>
