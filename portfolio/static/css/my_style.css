@@ -65,7 +65,7 @@ body {
     float: left;
 }
 .I-am #logo h1{
-    font-size: 180px;
+    font-size: 160px;
     margin:auto 0;
     font-family: 'Ramabhadra', sans-serif;
     font-family: 'Zilla Slab Highlight', cursive;
@@ -129,6 +129,27 @@ body {
     width: 85%;
     margin-left: 40px;
     white-space: nowrap;
+}
+
+.highlighted{
+    width: 85%;
+    margin-left: 40px;
+    overflow: hidden;
+    /* text-align: justify; */
+    /* align-items:center; */
+    justify-content: space-between;
+}
+
+.highlighted .project{
+    float: left;
+    /* width:20%; */
+    padding-right: 5px;
+}
+
+.highlighted .project a{
+    display: block;
+    text-decoration: none;
+    color: rgb(185, 184, 184);
 }
 
 /* ################################  footer   */ 
@@ -218,3 +239,47 @@ body {
     .col-md-12 {width: 100%;}
 }
 
+/* ##################################   portfolio # */
+
+#sidebar {
+    width:220px;
+    padding:30px 20px 0 0;
+    float:left;
+}
+
+#sidebar ul{
+    margin:0;
+    padding:0;
+}
+
+#sidebar ul li {
+    margin:0;
+    list-style:none;
+    padding:10px 14px;
+}
+
+#sidebar ul li a {
+    display:block;
+}
+
+#sidebar ul li.selected {
+    background:#5993bb;
+    border-radius:4px;
+}
+
+#sidebar ul li.selected a {
+    color:#fff;
+}
+
+
+.item {
+    width:25%;
+    padding:10px 20px 10px 0;
+    float:left;
+    text-align:center;
+    line-height:1.2;
+}
+
+.item img {
+    margin-bottom:8px;
+}

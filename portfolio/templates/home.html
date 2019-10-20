@@ -14,7 +14,7 @@
             <div id="extra">
                 <div id='extra_1'>
                     <div id="extra_1_1"><p>-</p></div>
-                    <div id="extra_1_2"><p>At that moment I go deep into python and its framework django, and into javascripts. It starts getting more interesting.</p></div>
+                    <div id="extra_1_2"><p>At that moment I go deep into python and its framework - django, and into javascripts. It starts getting more interesting.</p></div>
                 </div>
                 <div id='extra_2'>
                     <div id="extra_2_1"><p>-</p></div>
@@ -29,12 +29,53 @@
         <p>Recent works</p>
     </section>
 
+    <section class="highlighted">
+            {% for project in projects %}
+            <div class="project col-md-3" id="project_1">
+                    {% if project.id == 3 %}
+                        {% load thumbnail %}
+                        {% thumbnail project.image "x150" as pim %}
+                            <img src="{{ pim.url }}">
+                        {% endthumbnail %}
+                        <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+                    {% endif %}
+                </div>  
+            <div class="project col-md-3" id="project_2">
+                {% if project.id == 4 %}
+                    {% load thumbnail %}
+                    {% thumbnail project.image "x150" as pim %}
+                        <img src="{{ pim.url }}">
+                    {% endthumbnail %}
+                    <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+                {% endif %}
+            </div>
+            <div class="project col-md-3" id="project_3">
+                {% if project.id == 2 %}
+                    {% load thumbnail %}
+                    {% thumbnail project.image "x150" as pim %}
+                        <img src="{{ pim.url }}">
+                    {% endthumbnail %}
+                    <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+                {% endif %}
+            </div>
+            <div class="project col-md-3" id="project_4">
+                {% if project.id == 1 %}
+                    {% load thumbnail %}
+                    {% thumbnail project.image "x150" as pim %}
+                        <img src="{{ pim.url }}">
+                    {% endthumbnail %}
+                    <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+                {% endif %}
+                </div>
+            {% endfor %}
+        </section>
+
     <footer class='footer'>
         <div id="copy" class='col col-md-6 col-sm-12'>     
             <a>Copyright © 2019, Jakub Parcheta</a>
         </div>
         <div id="contact" class='col col-md-5 col-sm-12'>     
-            <a>jakub.parcheta [at] gmail.com | (+34) 662 260 982 | in</a>
+            <a>kubousky [at] gmail.com | (+34) 662 260 982 | in</a>
         </div>
     </footer> 
 {% endblock %}
