@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body { 
     font-family: 'Open Sans', sans-serif;
     background-color: #FAFAFA;
@@ -50,7 +54,40 @@ body {
     background-color: #636e72;
     color: #FAFAFA;
 }
+/* ################################  header   */
+.I-am {
+    width: 85%;
+    margin-left: 40px;
+    overflow: hidden;
+}
+.I-am #logo{
+    float: left;
+    font-size: 70px;
+    height: 450px;
+}
+.I-am #about-me{
+    float: right;
+}
 
+#extra{
+    overflow: hidden;
+}
+#extra_1{
+    float: left;
+    width: 40%;
+}
+#extra_1{
+    float: right;
+    width: 40%;
+}
+
+/* ################################  section   */
+
+.separator p{
+    width: 85%;
+    margin-left: 40px;
+    white-space: nowrap;
+}
 
 /* ################################  footer   */ 
 .footer{
