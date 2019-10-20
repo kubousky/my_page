@@ -1,6 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Project
+from django.views.decorators.cache import never_cache
 
+
+@never_cache
 def home(request):
     return render(request, "home.html", {})
 

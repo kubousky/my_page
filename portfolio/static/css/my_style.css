@@ -61,24 +61,66 @@ body {
     overflow: hidden;
 }
 .I-am #logo{
+    width: 30%;
     float: left;
-    font-size: 70px;
-    height: 450px;
 }
+.I-am #logo h1{
+    font-size: 180px;
+    margin:auto 0;
+    font-family: 'Ramabhadra', sans-serif;
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
 .I-am #about-me{
+    width: 70%;
     float: right;
+}
+.I-am #about-me #hi{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Telex', sans-serif;
+
+}
+.I-am #about-me #welcome{
+    color: rgb(185, 184, 184);
+    width: 55%;
+}
+.I-am #about-me #welcome p{
+    margin:auto 0;
 }
 
 #extra{
+    
+    font-family: 'Slabo 27px', serif;
+    font-family: 'Jomolhari', serif;
+    font-family: 'Slabo 13px', serif;
     overflow: hidden;
 }
 #extra_1{
     float: left;
-    width: 40%;
+    width: 55%;
 }
-#extra_1{
+
+#extra_1_1 p{
+    margin:auto 0;
+}
+
+#extra_1_2 p{
+    margin:auto 0;
+}
+
+#extra_2{
     float: right;
-    width: 40%;
+    width: 35%;
+}
+
+#extra_2_1 p{
+    margin:auto 0;
+}
+
+#extra_2_2 p{
+    margin:auto 0;
 }
 
 /* ################################  section   */
@@ -91,12 +133,17 @@ body {
 
 /* ################################  footer   */ 
 .footer{
+    font-family: 'Slabo 27px', serif;
+    font-family: 'Unna', serif;
+    font-family: 'Jomolhari', serif;
+    font-family: 'Slabo 13px', serif;
+    font-size: 13px;
+    letter-spacing: 1px;
     width: 85%;
     margin-left: 40px;
-    height: auto;
-    font-size: 13px;
+    height: auto;;
     background-color: black;
-    color:#FAFAFA;
+    color: rgb(185, 184, 184); /*  #FAFAFA; */
     overflow: hidden;
     position: fixed; 
     bottom: 0px;
