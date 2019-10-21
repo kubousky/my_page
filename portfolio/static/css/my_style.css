@@ -26,6 +26,11 @@ body {
     font-size: 16px;
     cursor: pointer;
     float: left;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 /* .btn-group a:not(:last-child) {
@@ -136,13 +141,41 @@ body {
     height: auto;
     /* text-align: justify; */
     /* align-items:center; */
-    /* justify-content: center;  */
+    /* justify-content: space-between; */
     border: solid green 2px;
+    /* display: table;
+    table-layout: fixed; */
+    
 }
 
 .highlighted .project{
     display: inline-block;
     border: solid red 1px;
+    overflow: hidden;
+    /* display: table-cell; */
+}
+
+.highlighted .project #project_1{
+    float: left;
+    width: 206px;
+    border: solid yellow 1px;
+}
+.highlighted .project #project_2{
+    width: 233px;
+    margin: 0 auto;
+    border: solid yellow 1px;
+}
+.highlighted .project #project_3{
+    width: 226px;
+    margin: 0 auto;
+    border: solid yellow 1px;
+    padding-top: 0px;
+}
+.highlighted .project #project_4{
+    width: 212px;
+    float: right;
+    padding-bottom: 0px;
+    border: solid yellow 1px;
 }
 
 .highlighted .project a{
@@ -151,9 +184,8 @@ body {
     color: rgb(185, 184, 184);
 }
 
-/* #project_1 img{margin-left:0px;}
 
-#project_4 img{margin-right:0px} */
+
 
 /* ################################  footer   */ 
 .footer{

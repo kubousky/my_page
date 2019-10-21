@@ -29,9 +29,9 @@
         <p>Recent works</p>
     </section>
 
-    <section class="highlighted">
-            <div id="project_1" class="project col-md-2_5">
-                <div id="">
+    <section class="highlighted container-fluid">
+            <div class="project col-md-2_5">
+                <div id="project_1">
                     {% load thumbnail %}
                     {% thumbnail project_1.image "x150" as p1im %}
                         <img src="{{ p1im.url }}">
@@ -40,7 +40,7 @@
                 </div>
             </div>  
             <div class="project col-md-2_5">
-                <div id="">
+                <div id="project_2">
                     {% load thumbnail %}
                     {% thumbnail project_2.image "x150" as p2im %}
                         <img src="{{ p2im.url }}">
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="project col-md-2_5">
-                <div id="">
+                <div id="project_3">
                     {% load thumbnail %}
                     {% thumbnail project_3.image "x150" as p3im %}
                         <img src="{{ p3im.url }}">
@@ -57,8 +57,8 @@
                     <a href="{{ project_3.get_absolute_url }}">{{ project_3.name }}</a>
                 </div>
             </div>
-            <div id="project_4" class="project col-md-2_5">
-                <div id="">
+            <div class="project col-md-2_5">
+                <div id="project_4">
                     {% load thumbnail %}
                     {% thumbnail project_4.image "x150" as p4im %}
                         <img src="{{ p4im.url }}">
