@@ -12,7 +12,7 @@ body {
 
 .btn-group{
     float: right;
-    padding-right: 5%;
+    padding-right: 7%;
 }
 
 .btn-group a{
@@ -24,7 +24,6 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    cursor: pointer;
     float: left;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -40,28 +39,29 @@ body {
 .btn-group #portfolio{
     border-right: none;
 }
-.btn-group #invisible_left{
+
+#invisible_left, #invisible_right{
     border-right: none;
     border-bottom: none;
-
-}
-.btn-group #invisible_right{
-    border-right: none;
-    border-bottom: none;
-
 }
 
 .btn-group a{
     border-left: none;
 }
 
-.btn-group a:hover {
+.btn-group a:not(#invisible_right):hover{
     background-color: #636e72;
     color: #FAFAFA;
+    cursor: pointer;
 }
+
 /* ################################  header   */
+
+
 .I-am {
+    padding-top:30px;
     width: 85%;
+    height: auto;
     margin-left: 40px;
     overflow: hidden;
 }
@@ -106,29 +106,33 @@ body {
     width: 55%;
 }
 
-#extra_1_1 p{
+#extra_1_1 p, #extra_1_2 p, #extra_2_1 p, #extra_2_2 p{
     margin:auto 0;
 }
 
-#extra_1_2 p{
+/* #extra_1_2 p{
     margin:auto 0;
-}
+} */
 
 #extra_2{
     float: right;
     width: 35%;
 }
 
-#extra_2_1 p{
+/* #extra_2_1 p{
     margin:auto 0;
 }
 
 #extra_2_2 p{
     margin:auto 0;
-}
+} */
 
 /* ################################  section   */
 
+.separator{
+    padding-top:40px;
+    padding-bottom:30px;
+}
 .separator p{
     width: 85%;
     margin-left: 40px;
@@ -139,10 +143,11 @@ body {
     width: 85%;
     margin-left: 40px;
     height: auto;
+    margin-bottom: 20px;
     /* text-align: justify; */
     /* align-items:center; */
     /* justify-content: space-between; */
-    border: solid green 2px;
+    border: solid blue 2px;
     /* display: table;
     table-layout: fixed; */
     
@@ -197,23 +202,28 @@ body {
     letter-spacing: 1px;
     width: 85%;
     margin-left: 40px;
-    height: auto;;
+    height: auto;
     background-color: black;
     color: rgb(185, 184, 184); /*  #FAFAFA; */
     overflow: hidden;
-    position: fixed; 
-    bottom: 0px;
+    /* position: fixed;  */
+    /* bottom: 0px; */
 }
+
+
+
 .col{
     padding:10px;
     padding-bottom:5px;
 }
 #copy{
     float: left;
+
 }
 
 #contact{
     float: right;
+
 }
 
 #contact a{
@@ -320,3 +330,6 @@ body {
 .item img {
     margin-bottom:8px;
 }
+
+
+  
