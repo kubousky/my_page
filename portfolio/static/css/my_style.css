@@ -90,8 +90,7 @@ body {
     margin:auto 0;
 }
 
-#extra{
-    
+#extra{  
     font-family: 'Slabo 27px', serif;
     font-family: 'Jomolhari', serif;
     font-family: 'Slabo 13px', serif;
@@ -134,16 +133,16 @@ body {
 .highlighted{
     width: 85%;
     margin-left: 40px;
-    overflow: hidden;
+    height: auto;
     /* text-align: justify; */
     /* align-items:center; */
-    justify-content: space-between;
+    /* justify-content: center;  */
+    border: solid green 2px;
 }
 
 .highlighted .project{
-    float: left;
-    /* width:20%; */
-    padding-right: 5px;
+    display: inline-block;
+    border: solid red 1px;
 }
 
 .highlighted .project a{
@@ -151,6 +150,10 @@ body {
     text-decoration: none;
     color: rgb(185, 184, 184);
 }
+
+/* #project_1 img{margin-left:0px;}
+
+#project_4 img{margin-right:0px} */
 
 /* ################################  footer   */ 
 .footer{
@@ -210,6 +213,7 @@ body {
 @media only screen and (max-width: 700px) {
     .col-sm-1 {width: 8.33%;}
     .col-sm-2 {width: 16.66%;}
+    .col-sm-2_5 {width: 25%;}
     .col-sm-3 {width: 25%;}
     .col-sm-4 {width: 33.33%;}
     .col-sm-5 {width: 41.66%;}
@@ -227,6 +231,7 @@ body {
 @media only screen and (min-width: 701px) {
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
+    .col-md-2_5 {width: 24.7%;}
     .col-md-3 {width: 25%;}
     .col-md-4 {width: 33.33%;}
     .col-md-5 {width: 41.66%;}
