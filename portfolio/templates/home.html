@@ -3,18 +3,17 @@
 {% block title %}jakub parcheta{% endblock %}
 
 {% block content %}
-
-    <header class="I-am">
-        <div id="logo" >
-            <h1>ky.</h1>
+    <header class="row I-am">
+        <div class="col" id="logo" >
+            <h1><h1><strong>ky.</strong></h1>
         </div>
-        <div id="about-me">
-            <div id="hi"><h1>Hi,</h1></div>
+        <div class="col" id="about-me">
+            <div id="hi">Hi,</h1></div>
             <div id="welcome"><p>Welcome to my online portfolio. I´m a student of Web Application Development higher vocational training. Living and studing in Valencia, Spain.</p></div>
             <div id="extra">
                 <div id='extra_1'>
                     <div id="extra_1_1"><p>-</p></div>
-                    <div id="extra_1_2"><p>At that moment I go deep into python and its framework - django, and into javascripts. It starts getting more interesting.</p></div>
+                    <div id="extra_1_2"><p>At that moment I go deep into python and its framework django, and into javascripts. It starts getting more interesting.</p></div>
                 </div>
                 <div id='extra_2'>
                     <div id="extra_2_1"><p>-</p></div>
@@ -29,8 +28,8 @@
         <p>Recent works</p>
     </section>
 
-    <section class="highlighted">
-            <div class="project col-md-2_5">
+    <section class="row highlighted">
+            <div class="col project col-md-2_5">
                 <div id="project_1">
                     {% load thumbnail %}
                     {% thumbnail project_1.image "x150" as p1im %}
@@ -39,7 +38,7 @@
                     <a href="{{ project_1.get_absolute_url }}">{{ project_1.name }}</a>
                 </div>
             </div>  
-            <div class="project col-md-2_5">
+            <div class="col project col-md-2_5">
                 <div id="project_2">
                     {% load thumbnail %}
                     {% thumbnail project_2.image "x150" as p2im %}
@@ -48,7 +47,7 @@
                     <a href="{{ project_2.get_absolute_url }}">{{ project_2.name }}</a>
                 </div>
             </div>
-            <div class="project col-md-2_5">
+            <div class="col project col-md-2_5">
                 <div id="project_3">
                     {% load thumbnail %}
                     {% thumbnail project_3.image "x150" as p3im %}
@@ -57,7 +56,7 @@
                     <a href="{{ project_3.get_absolute_url }}">{{ project_3.name }}</a>
                 </div>
             </div>
-            <div class="project col-md-2_5">
+            <div class="col project col-md-2_5">
                 <div id="project_4">
                     {% load thumbnail %}
                     {% thumbnail project_4.image "x150" as p4im %}
@@ -69,7 +68,7 @@
 
         </section>
 
-    <footer class='footer'>
+    <footer class='row footer'>
         <div id="copy" class='col col-md-6 col-sm-12'>     
             <a>Copyright © 2019, Jakub Parcheta</a>
         </div>
@@ -77,7 +76,5 @@
             <a>kubousky [at] gmail.com | (+34) 662 260 982 | in</a>
         </div>
     </footer> 
-
-
 
 {% endblock %}

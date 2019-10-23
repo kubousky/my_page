@@ -1,6 +1,9 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
+.selector-for-some-widget {
+    box-sizing: content-box;
+    }
 
 body { 
     font-family: 'Open Sans', sans-serif;
@@ -10,9 +13,12 @@ body {
     overflow-x: hidden;
 }
 
+.navbar{
+    width:85%;
+}
 .btn-group{
     float: right;
-    padding-right: 7%;
+    /* margin-left: 3%; */
 }
 
 .btn-group a{
@@ -31,10 +37,6 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
-/* .btn-group a:not(:last-child) {
-    border-right: none; /* Prevent double borders 
-} */
 
 .btn-group #portfolio{
     border-right: none;
@@ -62,7 +64,7 @@ body {
     padding-top:30px;
     width: 85%;
     height: auto;
-    margin-left: 40px;
+    margin-left: 3%;
     overflow: hidden;
 }
 .I-am #logo{
@@ -135,13 +137,13 @@ body {
 }
 .separator p{
     width: 85%;
-    margin-left: 40px;
+    margin-left: 3%;
     white-space: nowrap;
 }
 
 .highlighted{
     width: 85%;
-    margin-left: 40px;
+    margin-left: 3%;
     height: auto;
     margin-bottom: 20px;
     /* text-align: justify; */
@@ -201,7 +203,7 @@ body {
     font-size: 13px;
     letter-spacing: 1px;
     width: 85%;
-    margin-left: 40px;
+    margin-left: 3%;
     height: auto;
     background-color: black;
     color: rgb(185, 184, 184); /*  #FAFAFA; */
@@ -209,23 +211,16 @@ body {
     /* position: fixed;  */
     /* bottom: 0px; */
 }
-
-
-
 .col{
     padding:10px;
     padding-bottom:5px;
 }
 #copy{
     float: left;
-
 }
-
 #contact{
     float: right;
-
 }
-
 #contact a{
     float: right;
     white-space: nowrap;
