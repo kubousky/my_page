@@ -3,12 +3,13 @@
 {% block title %}jakub parcheta{% endblock %}
 
 {% block content %}
+
     <header class="row I-am">
-        <div class="col" id="logo" >
-            <h1><h1><strong>ky.</strong></h1>
+        <div class="col col-md-3" id="logo" >
+            <h1><strong>ky.</strong></h1>
         </div>
-        <div class="col" id="about-me">
-            <div id="hi">Hi,</h1></div>
+        <div class="col col-md-9" id="about-me">
+            <div id="hi"><h1>Hi,</h1></div>
             <div id="welcome"><p>Welcome to my online portfolio. I´m a student of Web Application Development higher vocational training. Living and studing in Valencia, Spain.</p></div>
             <div id="extra">
                 <div id='extra_1'>
@@ -24,8 +25,8 @@
     </header>
     
     <section class="separator">
-        <p>...............................................................................................................................................................................................................................................................................</p>
-        <p>Recent works</p>
+            <p>.............................................................................................................................................................................................................................................................................</p>
+            <p>Recent works</p>
     </section>
 
     <section class="row highlighted">
@@ -56,7 +57,7 @@
                     <a href="{{ project_3.get_absolute_url }}">{{ project_3.name }}</a>
                 </div>
             </div>
-            <div class="col project col-md-2_5">
+            <div class="col project four col-md-2_5">
                 <div id="project_4">
                     {% load thumbnail %}
                     {% thumbnail project_4.image "x150" as p4im %}

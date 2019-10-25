@@ -1,6 +1,3 @@
-/* * {
-    box-sizing: border-box;
-} */
 .selector-for-some-widget {
     box-sizing: content-box;
     }
@@ -8,17 +5,40 @@
 body { 
     font-family: 'Open Sans', sans-serif;
     background-color: #FAFAFA;
-    margin:0;
-    padding:0;
-    overflow-x: hidden;
-}
 
+}
+.container-fluid{
+    padding-left:0; 
+    padding-right:0;
+}
 .navbar{
     width:85%;
+    height: 76px;
+    margin-left: 3%;
+    display: inline-block;
+    overflow: hidden;
+    border: solid blue 1px;
+    padding-right:0;
+    border-right-width: 0.001px;
 }
+.navbar_2{
+    width:auto;
+    height: 76px;
+    display: inline-block;
+    overflow: hidden;
+    border: solid blue 1px;
+    padding-left:0;
+    margin-left:0;
+    padding-top:8px;
+    border-left-width: 0.001px;
+}
+
 .btn-group{
     float: right;
-    /* margin-left: 3%; */
+    width: auto;
+    /* border: solid yellow 1px; */
+    border-right-width: 0.001px;
+    border-left-width: 0.001px;
 }
 
 .btn-group a{
@@ -30,7 +50,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    float: left;
+    /* float: left; */
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -40,18 +60,20 @@ body {
 
 .btn-group #portfolio{
     border-right: none;
+    border-right-width: 0.001px;
 }
 
 #invisible_left, #invisible_right{
     border-right: none;
     border-bottom: none;
+    border-left-width: 0.001px;
 }
 
 .btn-group a{
     border-left: none;
 }
 
-.btn-group a:not(#invisible_right):hover{
+.btn-group a:hover:not(#invisible_right):not(#invisible_left){
     background-color: #636e72;
     color: #FAFAFA;
     cursor: pointer;
@@ -61,6 +83,7 @@ body {
 
 
 .I-am {
+    border: solid blue 1px;
     padding-top:30px;
     width: 85%;
     height: auto;
@@ -68,12 +91,15 @@ body {
     overflow: hidden;
 }
 .I-am #logo{
+    border: solid red 1px;
     width: 30%;
     float: left;
 }
 .I-am #logo h1{
     font-size: 160px;
     margin:auto 0;
+    color: black;
+    border: solid yellow 1px;
     font-family: 'Ramabhadra', sans-serif;
     font-family: 'Zilla Slab Highlight', cursive;
     font-family: 'Roboto Slab', serif;
@@ -82,16 +108,19 @@ body {
 .I-am #about-me{
     width: 70%;
     float: right;
+    border: solid red 1px;
+    padding-right: 0;
 }
 .I-am #about-me #hi{
     font-family: 'Inconsolata', monospace;
     font-family: 'PT Mono', monospace;
     font-family: 'Telex', sans-serif;
-
+    border: solid yellow 1px;
 }
 .I-am #about-me #welcome{
     color: rgb(185, 184, 184);
     width: 55%;
+    border: solid yellow 1px;
 }
 .I-am #about-me #welcome p{
     margin:auto 0;
@@ -102,44 +131,44 @@ body {
     font-family: 'Jomolhari', serif;
     font-family: 'Slabo 13px', serif;
     overflow: hidden;
+    border: solid yellow 1px;
 }
 #extra_1{
     float: left;
     width: 55%;
+    border: solid green 1px;
 }
 
 #extra_1_1 p, #extra_1_2 p, #extra_2_1 p, #extra_2_2 p{
     margin:auto 0;
 }
 
-/* #extra_1_2 p{
-    margin:auto 0;
-} */
-
 #extra_2{
     float: right;
     width: 35%;
+    border: solid green 1px;
 }
-
-/* #extra_2_1 p{
-    margin:auto 0;
-}
-
-#extra_2_2 p{
-    margin:auto 0;
-} */
 
 /* ################################  section   */
 
 .separator{
-    padding-top:40px;
-    padding-bottom:30px;
+    width:85%;
+    height: auto;
+    margin-left: 3%;
+    display: inline-block;
+    overflow: hidden;
+    border: solid blue 1px;
+}
+.separator .sep{
+    border: solid red 1px;
+    float:left;
 }
 .separator p{
-    width: 85%;
-    margin-left: 3%;
     white-space: nowrap;
+    border: solid yellow 1px;
 }
+
+/* # ############################     projects */
 
 .highlighted{
     width: 85%;
@@ -159,7 +188,11 @@ body {
     display: inline-block;
     border: solid red 1px;
     overflow: hidden;
-    /* display: table-cell; */
+}
+
+.highlighted .project .last{
+    padding-right: 0;
+    border: solid pink 3px;
 }
 
 .highlighted .project #project_1{
@@ -207,9 +240,10 @@ body {
     height: auto;
     background-color: black;
     color: rgb(185, 184, 184); /*  #FAFAFA; */
+    display: inline-block;
     overflow: hidden;
     /* position: fixed;  */
-    /* bottom: 0px; */
+    /* margin-bottom: 0px; */
 }
 .col{
     padding:10px;

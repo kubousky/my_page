@@ -7,28 +7,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- ok --><link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <!-- ok --><link href="https://fonts.googleapis.com/css?family=Telex&display=swap" rel="stylesheet">
-        <!-- ok --><link href="https://fonts.googleapis.com/css?family=Slabo+13px&display=swap" rel="stylesheet">
-        <!-- ok --><link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Telex&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+13px&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- CSS -->
         <link href="{% static "css/my_style.css" %}" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar">  
-            <div class="btn-group">
-                <a id="invisible_left"></a>
-                <a href="{% url "portfolio:home" %}">Home</a>
-                <a href="{% url "portfolio:about-us" %}">About</a>
-                <a href="{% url "portfolio:contact" %}">Contact</a>
-                <a id="portfolio" href="{% url "portfolio:categories" %}">Portfolio</a>
-                <a id="invisible_right"></a>
-            </div>
-        </nav>
 
-        <div class='container-fluid'>   
+        <div class='container-fluid'>
+            <nav class="nav">
+                <div class="navbar">
+                    <div class="btn-group">
+                        <a id="invisible_left"></a>
+                        <a href="{% url "portfolio:home" %}">Home</a>
+                        <a href="{% url "portfolio:about-us" %}">About</a>
+                        <a href="{% url "portfolio:contact" %}">Contact</a>
+                        <a id="portfolio" href="{% url "portfolio:categories" %}">Portfolio</a>
+                        <!-- <a id="invisible_right"></a> -->
+                    </div>
+                </div>
+                <div class="navbar_2">
+                    <div class="btn-group">
+                        <a id="invisible_right"></a>
+                    </div>
+                </div>
+            </nav>
             {% block content %}
             {% endblock %}
         </div>
