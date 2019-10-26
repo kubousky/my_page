@@ -84,7 +84,7 @@ body {
 
 .I-am {
     border: solid blue 1px;
-    padding-top:30px;
+    /* padding-top:5px; */
     width: 85%;
     height: auto;
     margin-left: 3%;
@@ -188,6 +188,7 @@ body {
     display: inline-block;
     border: solid red 1px;
     overflow: hidden;
+    
 }
 
 .highlighted .project .last{
@@ -202,14 +203,15 @@ body {
 }
 .highlighted .project #project_2{
     width: 233px;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     border: solid yellow 1px;
 }
 .highlighted .project #project_3{
     width: 226px;
     margin: 0 auto;
     border: solid yellow 1px;
-    padding-top: 0px;
+    /* padding-top: 0px; */
+    margin: 0 auto 0 auto;
 }
 .highlighted .project #project_4{
     width: 212px;
@@ -302,8 +304,9 @@ body {
 @media only screen and (min-width: 701px) {
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
-    .col-md-2_5 {width: 24.7%;}
+    .col-md-2_5 {width: 23%;}
     .col-md-3 {width: 25%;}
+    .col-md-3_5 {width: 27%;}
     .col-md-4 {width: 33.33%;}
     .col-md-5 {width: 41.66%;}
     .col-md-6 {width: 50%;}
