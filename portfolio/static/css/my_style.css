@@ -1,8 +1,6 @@
-
-
-.flex-fill {
-    flex:1 1 auto;
-    border: solid blue 1px;
+.cont{min-height: 100vh;}
+.a{
+    border: solid red 1px;
 }
 
 .selector-for-some-widget {
@@ -19,6 +17,11 @@ html,body {
     padding-left:0; 
     padding-right:0;
     min-height: 100vh;
+}
+
+.flex-fill {
+    flex:1 1 auto;
+    border: solid blue 1px;
 }
 
 .navbar{
@@ -186,48 +189,37 @@ html,body {
     margin-left: 3%;
     height: auto;
     margin-bottom: 20px;
-    /* text-align: justify; */
-    /* align-items:center; */
-    /* justify-content: space-between; */
     border: solid blue 2px;
-    /* display: table;
-    table-layout: fixed; */
-    
 }
 
 .highlighted .project{
     display: inline-block;
     border: solid red 1px;
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 
-.highlighted .project .last{
-    padding-right: 0;
-    border: solid pink 3px;
-}
+.first{padding-left: 0px;}
+.fourth{padding-right: 0px;}
 
 .highlighted .project #project_1{
-    float: left;
     width: 206px;
+    float: left;
     border: solid yellow 1px;
 }
 .highlighted .project #project_2{
     width: 233px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     border: solid yellow 1px;
 }
 .highlighted .project #project_3{
     width: 226px;
     margin: 0 auto;
     border: solid yellow 1px;
-    /* padding-top: 0px; */
     margin: 0 auto 0 auto;
 }
 .highlighted .project #project_4{
     width: 212px;
     float: right;
-    padding-bottom: 0px;
     border: solid yellow 1px;
 }
 
@@ -373,6 +365,3 @@ html,body {
 .item img {
     margin-bottom:8px;
 }
-
-
-  

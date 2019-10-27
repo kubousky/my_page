@@ -32,7 +32,7 @@
     </section>
 
     <section class="row highlighted">
-            <div class="project col-md-2_5">
+            <div class="project first col-md-2_5">
                 <div id="project_1">
                     {% load thumbnail %}
                     {% thumbnail project_1.image "x150" as p1im %}
@@ -59,7 +59,7 @@
                     <a href="{{ project_3.get_absolute_url }}">{{ project_3.name }}</a>
                 </div>
             </div>
-            <div class="project four col-md-2_5">
+            <div class="project fourth col-md-2_5">
                 <div id="project_4">
                     {% load thumbnail %}
                     {% thumbnail project_4.image "x150" as p4im %}
@@ -70,7 +70,8 @@
             </div>
 
         </section>
-    </main>
+</main>
+
     <footer class='row footer'>
         <div id="copy" class='col col-md-6 col-sm-12'>     
             <a>Copyright © 2019, Jakub Parcheta</a>
