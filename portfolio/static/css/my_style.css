@@ -1,16 +1,26 @@
+
+
+.flex-fill {
+    flex:1 1 auto;
+    border: solid blue 1px;
+}
+
 .selector-for-some-widget {
     box-sizing: content-box;
     }
 
-body { 
+html,body { 
     font-family: 'Open Sans', sans-serif;
     background-color: #FAFAFA;
-
+    min-height:100vh;
 }
+
 .container-fluid{
     padding-left:0; 
     padding-right:0;
+    min-height: 100vh;
 }
+
 .navbar{
     width:85%;
     height: 76px;
@@ -21,6 +31,7 @@ body {
     padding-right:0;
     border-right-width: 0.001px;
 }
+
 .navbar_2{
     width:auto;
     height: 76px;
@@ -229,7 +240,7 @@ body {
 
 
 
-/* ################################  footer   */ 
+/* ################################  footi.footi   */ 
 .footer{
     font-family: 'Slabo 27px', serif;
     font-family: 'Unna', serif;
@@ -265,7 +276,7 @@ body {
 
 
 @media only screen and (max-width: 400px) {
-    .footer{width: 100%;}
+    .footi{width: 100%;}
     .navbar{display: flex;align-items:center;justify-content: center;}
 }
 
@@ -278,7 +289,7 @@ body {
 }
 
 @media only screen and (max-width: 665px) {
-    .footer{margin-left: 0px;}
+    .footi{margin-left: 0px;}
     .btn-group #invisible_left{padding:0;border:none;}
     .btn-group #invisible_right{padding:0;border:none;}
 }
