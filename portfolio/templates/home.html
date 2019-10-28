@@ -5,13 +5,18 @@
 {% block content %}
 
 <main class="flex-fill">
+  <div class="c d-flex align-content-around flex-wrap">
+        <!-- align-content-sm-around align-content-md-around align-content-xl-around -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!--  -->
 
+    
     <header class="row I-am">
         <div class="col col-md-3" id="logo" >
             <h1><strong>ky.</strong></h1>
         </div>
         <div class="col col-md-9" id="about-me">
-            <div id="hi"><h1>Hi,</h1></div>
+            <div id="hi"><h2>Hi,</h2></div>
             <div id="welcome"><p>Welcome to my online portfolio. I´m a student of Web Application Development higher vocational training. Living and studing in Valencia, Spain.</p></div>
             <div id="extra">
                 <div id='extra_1'>
@@ -27,7 +32,7 @@
     </header>
     
     <section class="separator">
-            <p>...................................................................................................................................................................................................................................................................................................</p>
+            <p>................................................................................................................................................................................................................................................................................................................................................</p>
             <p>Recent works</p>
     </section>
 
@@ -68,8 +73,8 @@
                     <a href="{{ project_4.get_absolute_url }}">{{ project_4.name }}</a>
                 </div>
             </div>
-
         </section>
+  </div>
 </main>
 
     <footer class='row footer'>

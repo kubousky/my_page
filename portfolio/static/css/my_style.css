@@ -1,7 +1,5 @@
 .cont{min-height: 100vh;}
-.a{
-    border: solid red 1px;
-}
+
 
 .selector-for-some-widget {
     box-sizing: content-box;
@@ -21,9 +19,49 @@ html,body {
 
 .flex-fill {
     flex:1 1 auto;
-    border: solid blue 1px;
+    border: solid green 1px;
+}
+.c{
+    border: solid pink 1px;
+    /* JQuerry su height a la de .flex-fill */  
 }
 
+/* .flex-fill {
+    flex:1 1 auto;
+    border: solid green 1px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.c{
+    border: solid green 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+} */
+
+.container{
+    background-color: green;
+    width: 100px;
+}
+
+.red{
+    float: left;
+    width: 50px;
+    background-color: red;
+}
+
+.brown{
+    float: left;
+    width: 50px;
+    background-color: brown;
+}
+
+.clear{
+    clear: both;
+}
+/* ???????????????????? */
 .navbar{
     width:85%;
     height: 76px;
@@ -102,12 +140,14 @@ html,body {
     width: 85%;
     height: auto;
     margin-left: 3%;
+    /* margin-left: 0; */
     overflow: hidden;
 }
 .I-am #logo{
     border: solid red 1px;
     width: 30%;
     float: left;
+    padding-top:0px;
 }
 .I-am #logo h1{
     font-size: 160px;
@@ -124,6 +164,7 @@ html,body {
     float: right;
     border: solid red 1px;
     padding-right: 0;
+    padding-top:0px;
 }
 .I-am #about-me #hi{
     font-family: 'Inconsolata', monospace;
@@ -180,6 +221,7 @@ html,body {
 .separator p{
     white-space: nowrap;
     border: solid yellow 1px;
+    margin-bottom: 8px;
 }
 
 /* # ############################     projects */
