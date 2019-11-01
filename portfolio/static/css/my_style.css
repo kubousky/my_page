@@ -1,10 +1,3 @@
-.cont{min-height: 100vh;}
-
-
-.selector-for-some-widget {
-    box-sizing: content-box;
-    }
-
 html,body { 
     font-family: 'Open Sans', sans-serif;
     background-color: #FAFAFA;
@@ -23,45 +16,9 @@ html,body {
 }
 .c{
     border: solid pink 1px;
-    /* JQuerry su height a la de .flex-fill */  
+    /* JQuerry iguala height de .c a la de .flex-fill */  
 }
 
-/* .flex-fill {
-    flex:1 1 auto;
-    border: solid green 1px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-.c{
-    border: solid green 1px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-} */
-
-.container{
-    background-color: green;
-    width: 100px;
-}
-
-.red{
-    float: left;
-    width: 50px;
-    background-color: red;
-}
-
-.brown{
-    float: left;
-    width: 50px;
-    background-color: brown;
-}
-
-.clear{
-    clear: both;
-}
-/* ???????????????????? */
 .navbar{
     width:85%;
     height: 76px;
@@ -88,7 +45,6 @@ html,body {
 .btn-group{
     float: right;
     width: auto;
-    /* border: solid yellow 1px; */
     border-right-width: 0.001px;
     border-left-width: 0.001px;
 }
@@ -102,7 +58,6 @@ html,body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    /* float: left; */
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -136,39 +91,39 @@ html,body {
 
 .I-am {
     border: solid blue 1px;
-    /* padding-top:5px; */
     width: 85%;
     height: auto;
     margin-left: 3%;
-    /* margin-left: 0; */
     overflow: hidden;
 }
 .I-am #logo{
     border: solid red 1px;
-    width: 30%;
+    /* width: 30%; */
     float: left;
     padding-top:0px;
+    padding-left:0px;
 }
 .I-am #logo h1{
     font-size: 160px;
     margin:auto 0;
     color: black;
     border: solid yellow 1px;
-    font-family: 'Ramabhadra', sans-serif;
-    font-family: 'Zilla Slab Highlight', cursive;
+    /* font-family: 'Ramabhadra', sans-serif;
+    font-family: 'Zilla Slab Highlight', cursive; */
     font-family: 'Roboto Slab', serif;
+
 }
 
 .I-am #about-me{
-    width: 70%;
+    /* width: 70%; */
     float: right;
     border: solid red 1px;
     padding-right: 0;
     padding-top:0px;
 }
 .I-am #about-me #hi{
-    font-family: 'Inconsolata', monospace;
-    font-family: 'PT Mono', monospace;
+    /* font-family: 'Inconsolata', monospace;
+    font-family: 'PT Mono', monospace; */
     font-family: 'Telex', sans-serif;
     border: solid yellow 1px;
 }
@@ -182,8 +137,8 @@ html,body {
 }
 
 #extra{  
-    font-family: 'Slabo 27px', serif;
-    font-family: 'Jomolhari', serif;
+    /* font-family: 'Slabo 27px', serif;
+    font-family: 'Jomolhari', serif; */
     font-family: 'Slabo 13px', serif;
     overflow: hidden;
     border: solid yellow 1px;
@@ -241,6 +196,7 @@ html,body {
 }
 
 .first{padding-left: 0px;}
+
 .fourth{padding-right: 0px;}
 
 .highlighted .project #project_1{
@@ -271,14 +227,11 @@ html,body {
     color: rgb(185, 184, 184);
 }
 
-
-
-
-/* ################################  footi.footi   */ 
+/* ################################  footer   */ 
 .footer{
-    font-family: 'Slabo 27px', serif;
+    /* font-family: 'Slabo 27px', serif;
     font-family: 'Unna', serif;
-    font-family: 'Jomolhari', serif;
+    font-family: 'Jomolhari', serif; */
     font-family: 'Slabo 13px', serif;
     font-size: 13px;
     letter-spacing: 1px;
@@ -289,8 +242,7 @@ html,body {
     color: rgb(185, 184, 184); /*  #FAFAFA; */
     display: inline-block;
     overflow: hidden;
-    /* position: fixed;  */
-    /* margin-bottom: 0px; */
+
 }
 .col{
     padding:10px;
@@ -306,7 +258,6 @@ html,body {
     float: right;
     white-space: nowrap;
 }
-
 
 
 @media only screen and (max-width: 400px) {
@@ -331,7 +282,6 @@ html,body {
 @media only screen and (max-width: 700px) {
     .col-sm-1 {width: 8.33%;}
     .col-sm-2 {width: 16.66%;}
-    .col-sm-2_5 {width: 25%;}
     .col-sm-3 {width: 25%;}
     .col-sm-4 {width: 33.33%;}
     .col-sm-5 {width: 41.66%;}
@@ -345,22 +295,33 @@ html,body {
     #contact{float: left;}
     #contact a{float: left;}
 }
-
-@media only screen and (min-width: 701px) {
-    .col-md-1 {width: 8.33%;}
-    .col-md-2 {width: 16.66%;}
+@media only screen and (min-width: 701px){
     .col-md-2_5 {width: 23%;}
     .col-md-3 {width: 25%;}
     .col-md-3_5 {width: 27%;}
     .col-md-4 {width: 33.33%;}
-    .col-md-5 {width: 41.66%;}
-    .col-md-6 {width: 50%;}
-    .col-md-7 {width: 58.33%;}
-    .col-md-8 {width: 66.66%;}
-    .col-md-9 {width: 75%;}
-    .col-md-10 {width: 83.33%;}
-    .col-md-11 {width: 91.66%;}
-    .col-md-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 1040px) {
+    .col-m-4{width:30%;}
+    .col-m-8{width:70%;}
+}
+
+@media only screen and (min-width: 1041px){
+    .col-x-3{width:25%;}
+    .col-x-9{width:75%;}
+}
+
+@media only screen and (max-width: 1100px){
+    .col-l-4 {width: 33.33%}
+    .highlighted .fourth{display: none;}
+    .highlighted .project #project_3{float: right;}
+    .third{padding-right: 0px;}
+}
+
+@media only screen and (min-width: 1101px){
+    .col-xl-2_5 {width: 23%;}
+    .col-xl-3_5 {width: 27%;}
 }
 
 /* ##################################   portfolio # */
@@ -394,7 +355,6 @@ html,body {
 #sidebar ul li.selected a {
     color:#fff;
 }
-
 
 .item {
     width:25%;
