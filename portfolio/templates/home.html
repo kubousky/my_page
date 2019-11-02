@@ -42,37 +42,37 @@
     </section>
 
     <section class="row highlighted">
-            <div class="project first col-md-2_5 col-l-4 col-xl-2_5">
+            <div class="project first col-m-6 col-l-4 col-xl-2_5">
                 <div id="project_1">
                     {% load thumbnail %}
-                    {% thumbnail project_1.image "x150" as p1im %}
+                    {% thumbnail project_1.image "215x150" crop="center" as p1im %}
                         <img src="{{ p1im.url }}">
                     {% endthumbnail %}
                     <a href="{{ project_1.get_absolute_url }}">{{ project_1.name }}</a>
                 </div>
             </div>  
-            <div class="project second col-md-3_5 col-l-4 col-xl-3_5">
+            <div class="project second col-m-6 col-l-4 col-xl-3_5">
                 <div id="project_2">
                     {% load thumbnail %}
-                    {% thumbnail project_2.image "x150" as p2im %}
+                    {% thumbnail project_2.image "215x150" crop="center" as p2im %}
                         <img src="{{ p2im.url }}">
                     {% endthumbnail %}
                     <a href="{{ project_2.get_absolute_url }}">{{ project_2.name }}</a>
                 </div>
             </div>
-            <div class="project third col-md-3_5 col-l-4 col-xl-3_5">
+            <div class="project third col-m-6 col-l-4 col-xl-3_5">
                 <div id="project_3">
                     {% load thumbnail %}
-                    {% thumbnail project_3.image "x150" as p3im %}
+                    {% thumbnail project_3.image "215x150" crop="center" as p3im %}
                         <img src="{{ p3im.url }}">
                     {% endthumbnail %}
                     <a href="{{ project_3.get_absolute_url }}">{{ project_3.name }}</a>
                 </div>
             </div>
-            <div class="project fourth col-md-2_5 col-l-4 col-xl-2_5">
+            <div class="project fourth col-m-6 col-l-4 col-xl-2_5">
                 <div id="project_4">
                     {% load thumbnail %}
-                    {% thumbnail project_4.image "x150" as p4im %}
+                    {% thumbnail project_4.image "215x150" crop="center" as p4im %}
                         <img src="{{ p4im.url }}">
                     {% endthumbnail %}
                     <a href="{{ project_4.get_absolute_url }}">{{ project_4.name }}</a>
@@ -83,10 +83,10 @@
 </main>
 
     <footer class='row footer'>
-        <div id="copy" class='col col-md-6 col-sm-12'>     
+        <div id="copy" class='co col-md-6 col-sm-12'>     
             <a>Copyright © 2019, Jakub Parcheta</a>
         </div>
-        <div id="contact" class='col col-md-5 col-sm-12'>     
+        <div id="contact" class='co col-md-5 col-sm-12'>     
             <a>kubousky [at] gmail.com | (+34) 662 260 982 | in</a>
         </div>
     </footer> 

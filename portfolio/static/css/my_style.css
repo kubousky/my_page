@@ -161,25 +161,25 @@ html,body {
     /* font-family: 'Slabo 27px', serif;
     font-family: 'Jomolhari', serif; */
     font-family: 'Slabo 13px', serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: solid yellow 1px;
 }
+
 #extra_1{
-    float: left;
+    /* float: left; */
     width: 55%;
-    border: solid green 1px;
+    border: solid green 3px;
+}
+
+#extra_2{
+    /* float: right; */
+    width: 35%;
+    border: solid green 3px;
 }
 
 #extra_1_1 p, #extra_1_2 p, #extra_2_1 p, #extra_2_2 p{
     margin:auto 0;
 }
-
-#extra_2{
-    float: right;
-    width: 35%;
-    border: solid green 1px;
-}
-
 /* ################################  section   */
 
 .separator{
@@ -221,24 +221,25 @@ html,body {
 .fourth{padding-right: 0px;}
 
 .highlighted .project #project_1{
-    width: 220px;
-    float: left;
+    width: 215px; /* 206 */
+    /* float: left; */
+    margin: 0 auto;
     border: solid yellow 1px;
 }
 .highlighted .project #project_2{
-    width: 233px;
+    width: 215px;  /* 233 */
     margin: 0 auto;
     border: solid yellow 1px;
 }
 .highlighted .project #project_3{
-    width: 226px;
+    width: 215px; /* 226 */
     margin: 0 auto;
     border: solid yellow 1px;
-    margin: 0 auto 0 auto;
 }
 .highlighted .project #project_4{
-    width: 212px;
-    float: right;
+    width: 215px;  /* 212 */
+    /* float: right; */
+    margin: 0 auto;
     border: solid yellow 1px;
 }
 
@@ -265,7 +266,7 @@ html,body {
     overflow: hidden;
 
 }
-.col{
+.co{
     padding:10px;
     padding-bottom:5px;
 }
@@ -282,7 +283,7 @@ html,body {
 
 
 @media only screen and (max-width: 400px) {
-    .footi{width: 100%;}
+    .footer{width: 100%;}
     .navbar{display: flex;align-items:center;justify-content: center;}
 }
 
@@ -292,15 +293,37 @@ html,body {
 
 @media only screen and (max-width: 524px) {
     .btn-group{float: left;padding-right: 0%;}
+    .footer{margin-left: 0px;}
 }
 
-@media only screen and (max-width: 665px) {
-    .footi{margin-left: 0px;}
-    .btn-group #invisible_left{padding:0;border:none;}
-    .btn-group #invisible_right{padding:0;border:none;}
+@media only screen and (max-width: 600px) {
+    .I-am #about-me #hello #hello_1{width: 65%;}
+    .I-am #about-me #hello #hello_2{width: 35%;}
+    .I-am #about-me #extra #extra_1{width: 100%;}
+    .I-am #about-me #extra #extra_2{width: 100%;}
+    .highlighted .project #project_1{float: left;}
+    .highlighted .project #project_3{float: left;}
+    .highlighted .project #project_2 {float: right;}
+    .highlighted .project #project_4 {float: right;}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 601px){
+    #extra{overflow: hidden;}
+    #extra_1{float: left;}
+    #extra_2{float: right;}
+}
+
+@media only screen and (max-width: 653px) and (min-width: 601px) {
+    /* .btn-group #invisible_left{padding:0;border:none;}
+    .btn-group #invisible_right{padding:0;border:none;} */
+    .I-am #about-me #hello #hello_1{width: 60%;}
+    .I-am #about-me #hello #hello_2{width: 40%;}
+    .I-am #about-me #extra #extra_1{width: 60%;}
+    .I-am #about-me #extra #extra_2{width: 35%;}
+    /* .navbar{display: flex;align-items:center;justify-content: center;} */
+}
+
+@media only screen and (max-width: 750px) {
     /* .col-sm-1 {width: 8.33%;}
     .col-sm-2 {width: 16.66%;}
     .col-sm-3 {width: 25%;}
@@ -316,15 +339,18 @@ html,body {
     #contact{float: left;}
     #contact a{float: left;}
 }
-@media only screen and (min-width: 701px){
-    /* .col-md-2_5 {width: 23%;}
-    .col-md-3 {width: 25%;}
-    .col-md-3_5 {width: 27%;}
-    .col-md-4 {width: 33.33%;} */
+@media only screen and (min-width: 751px){
     .col-md-5 {width: 41.66%;}
     .col-md-6 {width: 50%;}
 }
-/* ############################################## Ky */
+
+@media only screen and (max-width: 849px){
+    .col-m-6 {width: 50%;}
+    /* .highlighted .project #project_1 {margin: 0 auto;}
+    .highlighted .project #project_4 {margin: 0 auto;} */
+    .first, .second {margin-bottom: 15px;}
+}
+
 @media only screen and (max-width: 999px){
     .I-am #about-me {width:100%;}
     .col-s-12 {width:100%;}
@@ -351,12 +377,16 @@ html,body {
     .col-l-4 {width: 33.33%}
     .highlighted .project #project_3 {float: right;}
     .third {padding-right: 0px;}
+    .highlighted .project #project_1{float: left;}
 }
 
 @media only screen and (min-width: 1101px){
     .col-xl-2_5 {width: 23%;}
     .col-xl-3_5 {width: 27%;}
+    .highlighted .project #project_1{float: left;}
+    .highlighted .project #project_4{float: right;}
 }
+
 
 /* ##################################   portfolio # */
 
