@@ -12,12 +12,12 @@ html,body {
 
 .flex-fill {
     flex:1 1 auto;
-    border: solid green 1px;
+    /* border: solid green 1px; */
 }
-.c{
+/* .c{
     border: solid pink 1px;
-    /* JQuerry iguala height de .c a la de .flex-fill */  
-}
+    JQuerry iguala height de .c a la de .flex-fill 
+} */
 
 .navbar{
     width:85%;
@@ -25,7 +25,7 @@ html,body {
     margin-left: 3%;
     display: inline-block;
     overflow: hidden;
-    border: solid blue 1px;
+    /* border: solid blue 1px; */
     padding-right:0;
     border-right-width: 0.001px;
 }
@@ -35,7 +35,7 @@ html,body {
     height: 76px;
     display: inline-block;
     overflow: hidden;
-    border: solid blue 1px;
+    /* border: solid blue 1px; */
     padding-left:0;
     margin-left:0;
     padding-top:8px;
@@ -90,24 +90,25 @@ html,body {
 
 
 .I-am {
-    border: solid blue 1px;
+    /* border: solid blue 1px; */
     width: 85%;
     height: auto;
     margin-left: 3%;
     overflow: hidden;
+    min-height: 200px;
 }
 .I-am #logo{
-    border: solid red 1px;
+    /* border: solid red 1px; */
     /* width: 30%; */
     float: left;
-    padding-top:0px;
-    padding-left:0px;
+    /* padding-top:0px; */
+    /* padding-left:0px; */
 }
 .I-am #logo h1{
     font-size: 160px;
     margin:auto 0;
     color: black;
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
     /* font-family: 'Ramabhadra', sans-serif;
     font-family: 'Zilla Slab Highlight', cursive; */
     font-family: 'Roboto Slab', serif;
@@ -116,7 +117,7 @@ html,body {
 .I-am #about-me{
     /* width: 70%; */
     /* float: right; */
-    border: solid red 1px;
+    /* border: solid red 1px; */
     padding-right: 0;
     padding-top:0px;
 }
@@ -132,24 +133,25 @@ html,body {
     /* font-family: 'Inconsolata', monospace;
     font-family: 'PT Mono', monospace; */
     font-family: 'Telex', sans-serif;
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
 }
 
 .I-am #about-me #hello #hello_1 #welcome{
     color: rgb(185, 184, 184);
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
 }
 .I-am #about-me #hello #hello_1 #welcome p{
     margin:auto 0;
+    text-align: justify;
 }
 
 .I-am #about-me #hello #hello_2{
     width: 45%;
-    border: solid green 1px;
+    /* border: solid green 1px; */
 }
 
 .I-am #about-me #hello #hello_2 #logo_small h1{
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
     float: right;
     font-size: 110px;
     /* margin:auto 0; */
@@ -162,23 +164,27 @@ html,body {
     font-family: 'Jomolhari', serif; */
     font-family: 'Slabo 13px', serif;
     /* overflow: hidden; */
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
 }
 
 #extra_1{
     /* float: left; */
     width: 55%;
-    border: solid green 3px;
+    /* border: solid green 3px; */
 }
 
 #extra_2{
     /* float: right; */
     width: 35%;
-    border: solid green 3px;
+    /* border: solid green 3px; */
 }
 
 #extra_1_1 p, #extra_1_2 p, #extra_2_1 p, #extra_2_2 p{
     margin:auto 0;
+}
+
+#extra_1_2, #extra_2_2 p{
+    text-align: justify;
 }
 /* ################################  section   */
 
@@ -207,12 +213,12 @@ html,body {
     margin-left: 3%;
     height: auto;
     margin-bottom: 20px;
-    border: solid blue 2px;
+    /* border: solid blue 2px; */
 }
 
 .highlighted .project{
     display: inline-block;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     overflow: hidden;   
 }
 
@@ -224,23 +230,23 @@ html,body {
     width: 215px; /* 206 */
     /* float: left; */
     margin: 0 auto;
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
 }
 .highlighted .project #project_2{
     width: 215px;  /* 233 */
     margin: 0 auto;
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
 }
 .highlighted .project #project_3{
     width: 215px; /* 226 */
     margin: 0 auto;
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
 }
 .highlighted .project #project_4{
     width: 215px;  /* 212 */
     /* float: right; */
     margin: 0 auto;
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
 }
 
 .highlighted .project a{
@@ -280,31 +286,47 @@ html,body {
     float: right;
     white-space: nowrap;
 }
-
-
-@media only screen and (max-width: 400px) {
-    .footer{width: 100%;}
-    .navbar{display: flex;align-items:center;justify-content: center;}
+@media only screen and (max-width: 370px) and (min-width: 320px) {
+    .navbar{padding-left: 0;}
 }
-
-@media only screen and (max-width: 471px) {
+@media only screen and (max-width: 400px) {
     .btn-group a{padding: 15px 18px;font-size: 15px;}
 }
-
-@media only screen and (max-width: 524px) {
-    .btn-group{float: left;padding-right: 0%;}
-    .footer{margin-left: 0px;}
+@media only screen and (max-width: 460px) {
+    .I-am #about-me #hello #hello_2 #logo_small h1{font-size: 95px;}
 }
 
-@media only screen and (max-width: 600px) {
-    .I-am #about-me #hello #hello_1{width: 65%;}
-    .I-am #about-me #hello #hello_2{width: 35%;}
-    .I-am #about-me #extra #extra_1{width: 100%;}
-    .I-am #about-me #extra #extra_2{width: 100%;}
+@media only screen and (max-width: 492px){
+    .highlighted .cl-12 {width: 100%;}
+    .third {margin-bottom: 15px;}
+}
+
+@media only screen and (max-width: 524px) and (min-width: 400px) {
+    .btn-group a{padding: 16px 20px;font-size: 16px;}
+}
+@media only screen and (max-width: 600px) and (min-width: 493px){
     .highlighted .project #project_1{float: left;}
     .highlighted .project #project_3{float: left;}
     .highlighted .project #project_2 {float: right;}
     .highlighted .project #project_4 {float: right;}
+}
+
+@media only screen and (max-width: 600px) {
+    .I-am, .separator, .highlighted {width:100%; margin-right: 3%}
+    .I-am #about-me #hello #hello_1{width: 65%;}
+    .I-am #about-me #hello #hello_2{width: 35%;}
+    .I-am #about-me #extra #extra_1{width: 100%;}
+    .I-am #about-me #extra #extra_2{width: 100%;}
+    /* .highlighted .project #project_1{float: left;}
+    .highlighted .project #project_3{float: left;}
+    .highlighted .project #project_2 {float: right;}
+    .highlighted .project #project_4 {float: right;} */
+    .footer{margin-left: 0px;}
+    .footer{width: 100%;}
+    .navbar{width: 100%;margin-left: 0;} /*padding-right:auto;*/
+    .navbar_2, .navbar .btn-group #invisible_left{display: none;}
+    /* .navbar{display: flex;align-items:center;justify-content: center;} */
+    .btn-group{float: left;padding-left: 0%;}
 }
 
 @media only screen and (min-width: 601px){
@@ -375,9 +397,9 @@ html,body {
 @media only screen and (max-width:1100px) and (min-width:850px){
     .highlighted .fourth {display: none;}
     .col-l-4 {width: 33.33%}
+    .highlighted .project #project_1 {float: left;}
     .highlighted .project #project_3 {float: right;}
     .third {padding-right: 0px;}
-    .highlighted .project #project_1{float: left;}
 }
 
 @media only screen and (min-width: 1101px){
