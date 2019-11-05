@@ -4,27 +4,41 @@
 {% block title %}categories{% endblock %}
 
 {% block content %}
-        <br></br>   
-        <h3>Portfolio</h3>
-        <div id="sidebar">
-                <h3>Categories</h3>
-                <ul>
-
+<main class="flex-fill">
+<div class="c d-flex align-content-around flex-wrap">
+        
+        <header id="header">
+                <h5><strong>Categories</strong></h5>
+                <p>-</p>
+                <p>I divided my projects between three groups</p>
+                <ul class="categories-names">
                 {% for c in categories %}
-                        <!-- <li {% if category.slug == c.slug %}class="selected"{% endif %}>
-                        <a href="{{ c.get_absolute_url }}">{{ c. }}</a>
-                        </li> -->
-                        <div class="item">
-                                {% load thumbnail %}
-                                {% thumbnail c.image "x150" as cim %}
-                                <a href="{{ c.get_absolute_url }}">
-                                        <img src="{% if cim %}{{ cim.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
-                                </a>
-                                <!-- <a href="{{ c.get_absolute_url }}">{{ c.name }}</a> -->
-                                {% endthumbnail %}
-                        </div>
+                        <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
                 {% endfor %}
+                        <a href="{% url "portfolio:project_list" %}">All</a>
                 </ul>
-        </div>
+        </header>
+        <section class="categories">
+                <div class="row">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                <div id="one">
+                                        <a href="{{ backend.get_absolute_url }}"><img src="{{ backend.image.url }}" class="img-responsive fit-image"></a>
+                                        <!-- <a href="{{ backend.get_absolute_url }}"><img src="{% static "img/mechanism5.png" %}" class="img-responsive fit-image"></a> -->
+                                </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                <div id="two">
+                                        <a href="{{ frontend.get_absolute_url }}"><img src="{{ frontend.image.url }}" class="img-responsive fit-image"></a>
+                                </div>
+                                <div id="three">
+                                        <!-- <a href="{{ frontend.get_absolute_url }}"><img src="{{ frontend.image.url }}" class="img-responsive fit-image"></a> -->
+                                        <a href="{% url "portfolio:project_list" %}"><img src="{% static "img/all.jpeg" %}" class="img-responsive fit-image"></a>
+                                </div>
+                        </div>
+                </div>
+        </section>
+</div>
+</main>
+       
 
 {% endblock %}

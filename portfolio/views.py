@@ -23,13 +23,17 @@ def categories(request, category_slug=None):
     category = None
     categories = Category.objects.all()
     projects = Project.objects.all()
+    backend = Category.objects.get(slug="backend")
+    frontend = Category.objects.get(slug="frontend")
     if category_slug:
         category = get_object_or_404(Category, slug=category_slug)
         projects = projects.filter(category=category)
     return render(request, "portfolio/categories.html", 
                             {'category': category,
                             'categories': categories,
-                            'projects': projects})
+                            'projects': projects,
+                            'backend': backend,
+                            'frontend': frontend})
 
 
 def project_list(request, category_slug=None):

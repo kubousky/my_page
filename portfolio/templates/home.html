@@ -6,8 +6,6 @@
 
 <main class="flex-fill">
   <div class="c d-flex align-content-around flex-wrap">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     
     <header class="row I-am">
         <div class="col-m-4 col-x-3" id="logo" >
@@ -46,7 +44,7 @@
                 <div id="project_1">
                     {% load thumbnail %}
                     {% thumbnail project_1.image "215x150" crop="center" as p1im %}
-                        <img src="{{ p1im.url }}">
+                    <a href="{{ project_1.get_absolute_url }}"><img src="{{ p1im.url }}"></a>
                     {% endthumbnail %}
                     <a href="{{ project_1.get_absolute_url }}">{{ project_1.name }}</a>
                 </div>
