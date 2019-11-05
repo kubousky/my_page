@@ -357,10 +357,19 @@ header p{
 }
 
 /* ##################################   portfolio # */
+#projects{
+    /* border: solid black 1px; */
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 3%;
+    margin-bottom: 10px;
+}
 
 #sidebar {
-    width:220px;
-    padding:30px 20px 0 0;
+    /* border: solid red 1px; */
+    width:150px;
+    padding:30px 100px 0 0;
     float:left;
 }
 
@@ -370,22 +379,40 @@ header p{
 }
 
 #sidebar ul li {
+    /* border: solid yellowgreen 1px; */
     margin:0;
+    padding:0;
     list-style:none;
-    padding:10px 14px;
 }
 
 #sidebar ul li a {
     display:block;
+    text-align: left;
+    color: #2d3436;
+    font-size: 16px;
+    padding: 15px 10px;
+    background-color: #FAFAFA;
+    border: 1px solid rgb(185, 184, 184);
+    border-bottom: none;
+    text-decoration: none;
+    margin-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
-
-#sidebar ul li.selected {
-    background:#5993bb;
-    border-radius:4px;
+#invisible-up{
+    border-top: none;
+    border-right: none;
 }
+#sidebar ul li a #invisible-down{border-right: none;}
+/* #sidebar ul li.selected {} */
 
 #sidebar ul li.selected a {
-    color:#fff;
+    color: #FAFAFA;
+    background-color: #636e72;
+    text-decoration: none;
 }
 
 .item {

@@ -6,31 +6,39 @@
 {% endblock %}
 
 {% block content %}
-    <div id="sidebar">
-        <h3>Categories</h3>
-        <ul>
-            <li {% if not category %}class="selected"{% endif %}>
-                <a href="{% url "portfolio:project_list" %}">All</a>
-            </li>
-            {% for c in categories %}
-                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
-                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+<main class="flex-fill">
+<div class="c d-flex align-content-around flex-wrap">
+    <div id="projects" class="row">
+        <div id="sidebar" class="col-2 col-sm-2 col-md-2 col-lg-2">
+            <ul>
+                <li><a id="invisible-up" href=""></a></li>
+                <li {% if not category %}class="selected"{% endif %}>
+                    <a href="{% url "portfolio:project_list" %}">All</a>
                 </li>
+                {% for c in categories %}
+                    <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                        <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                    </li>
+                {% endfor %}
+                <li><a id="invisible-down" href=""></a></li>
+            </ul>
+        </div>
+
+        <div id="main" class="col-9 col-sm-9 col-md-9 col-lg-9 project-list">
+            <h1>{% if category %}{{ category.name }}{% else %}Projects{% endif %}</h1>
+            {% for project in projects %}
+                <div class="item">
+                    {% load thumbnail %}
+                    {% thumbnail project.image "x150" as pim %}
+                        <a href="{{ project.get_absolute_url }}">
+                            <img src="{% if pim %}{{ pim.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+                        </a>
+                        <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+                    {% endthumbnail %}
+                </div>
             {% endfor %}
-        </ul>
+        </div>
     </div>
-    <div id="main" class="project-list">
-        <h1>{% if category %}{{ category.name }}{% else %}Projects{% endif %}</h1>
-        {% for project in projects %}
-            <div class="item">
-                {% load thumbnail %}
-                {% thumbnail project.image "x150" as pim %}
-                    <a href="{{ project.get_absolute_url }}">
-                        <img src="{% if pim %}{{ pim.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
-                    </a>
-                    <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
-                {% endthumbnail %}
-            </div>
-        {% endfor %}
-    </div>
+</div>
+</main>
 {% endblock %}
