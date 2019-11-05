@@ -53,7 +53,7 @@
                 <div id="project_2">
                     {% load thumbnail %}
                     {% thumbnail project_2.image "215x150" crop="center" as p2im %}
-                        <img src="{{ p2im.url }}">
+                    <a href="{{ project_2.get_absolute_url }}"><img src="{{ p2im.url }}"></a>
                     {% endthumbnail %}
                     <a href="{{ project_2.get_absolute_url }}">{{ project_2.name }}</a>
                 </div>
@@ -62,7 +62,7 @@
                 <div id="project_3">
                     {% load thumbnail %}
                     {% thumbnail project_3.image "215x150" crop="center" as p3im %}
-                        <img src="{{ p3im.url }}">
+                    <a href="{{ project_3.get_absolute_url }}"><img src="{{ p3im.url }}"></a>
                     {% endthumbnail %}
                     <a href="{{ project_3.get_absolute_url }}">{{ project_3.name }}</a>
                 </div>
@@ -71,7 +71,7 @@
                 <div id="project_4">
                     {% load thumbnail %}
                     {% thumbnail project_4.image "215x150" crop="center" as p4im %}
-                        <img src="{{ p4im.url }}">
+                    <a href="{{ project_4.get_absolute_url }}"><img src="{{ p4im.url }}"></a>
                     {% endthumbnail %}
                     <a href="{{ project_4.get_absolute_url }}">{{ project_4.name }}</a>
                 </div>
