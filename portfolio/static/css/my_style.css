@@ -358,20 +358,18 @@ header p{
 
 /* ##################################   portfolio # */
 #projects{
-    /* border: solid black 1px; */
-    width: 100%;
-    height: auto;
     margin-left: 10px;
-    margin-right: 3%;
+    margin-right: 10px;
     margin-bottom: 10px;
+    display: inline-flex;
 }
 
 #sidebar {
-    margin-top: 17px;
-    border: solid red 1px;
-    padding: 0px 0 0 0;
-    /* float: left; */
-    height: 400px;
+    margin-top: 8px;
+    border: solid black 2px;
+    padding: 0;
+    height: auto;
+    width: 100px;
 }
 
 #sidebar ul{
@@ -406,9 +404,12 @@ header p{
 #sidebar ul li #invisible-up{
     border-top: none;
     border-right: none;
+    padding-top: 25px;
 }
-#sidebar ul li #invisible-down{border-right: none;}
-/* #sidebar ul li.selected {} */
+#sidebar ul li #invisible-down{
+    border-right: none;
+    padding-bottom: 25px;
+}
 
 #sidebar ul li.selected a {
     color: #FAFAFA;
@@ -416,19 +417,37 @@ header p{
     text-decoration: none;
 }
 
-#main {margin-top:50px;}
-
-.item {
-    border: solid red 1px;
-    width:25%;
-    padding:10px 20px 10px 0;
-    float:left;
-    text-align:center;
-    line-height:1.2;
+#main {
+    width: 85%;
+    margin-left: 20px;
+    margin-top: 50px;
+    border: solid black 2px;
 }
 
-.item img {
-    margin-bottom:8px;
+#main h3{
+    font-family: 'Telex', sans-serif;
+}
+.main{
+    width:100%;
+    margin-left:0;
+}
+
+.columns{
+    border: solid green 1px;
+    padding-bottom: 20px;
+}
+.item {
+    border: solid red 1px;
+    /* padding:10px 20px 10px 0; */
+    float:left;
+    text-align:left;
+    display: block;
+    width: 215px;
+    margin: 0 auto;
+}
+.item a {
+    text-decoration: none;
+    color: rgb(185, 184, 184);
 }
 
 @media only screen and (max-width: 370px) and (min-width: 320px) {
@@ -439,7 +458,7 @@ header p{
 }
 @media only screen and (max-width: 460px) {
     .I-am #about-me #hello #hello_2 #logo_small h1{font-size: 95px;}
-
+    .c-12 {width:100%;}
 }
 
 @media only screen and (max-width: 492px){
@@ -482,6 +501,13 @@ header p{
     #extra_2{float: right;}
 }
 
+@media only screen and (min-width: 661px){
+    #main h3{display:none;}
+}
+@media only screen and (max-width: 660px){
+    #sidebar{display:none;}
+}
+
 @media only screen and (max-width: 653px) and (min-width: 601px) {
     /* .btn-group #invisible_left{padding:0;border:none;}
     .btn-group #invisible_right{padding:0;border:none;} */
@@ -515,6 +541,7 @@ header p{
 
 @media only screen and (max-width: 849px){
     .col-m-6 {width: 50%;}
+    .c-5 {width: 50%;}
     /* .highlighted .project #project_1 {margin: 0 auto;}
     .highlighted .project #project_4 {margin: 0 auto;} */
     .first, .second {margin-bottom: 15px;}
@@ -544,6 +571,7 @@ header p{
 @media only screen and (max-width:1100px) and (min-width:850px){
     .highlighted .fourth {display: none;}
     .col-l-4 {width: 33.33%}
+    .c-4 {width: 33.33%}
     .highlighted .project #project_1 {float: left;}
     .highlighted .project #project_3 {float: right;}
     .third {padding-right: 0px;}
@@ -552,6 +580,7 @@ header p{
 @media only screen and (min-width: 1101px){
     .col-xl-2_5 {width: 23%;}
     .col-xl-3_5 {width: 27%;}
+    .c-3 {width: 25%}
     .highlighted .project #project_1{float: left;}
     .highlighted .project #project_4{float: right;}
 }

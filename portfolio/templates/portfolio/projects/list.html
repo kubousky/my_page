@@ -7,8 +7,9 @@
 
 {% block content %}
 
-    <div id="projects" class="row">
-        <div id="sidebar" class="col-4 col-sm-3 col-md-3 col-lg-1">
+    <div id="projects">
+
+        <div id="sidebar">
             <ul>
                 <li><a id="invisible-up" href=""></a></li>
                 <li {% if not category %}class="selected"{% endif %}>
@@ -23,20 +24,27 @@
             </ul>
         </div>
 
-        <div id="main" class="col-12 col-sm-11 col-md-10 col-lg-11 project-list">
-            <!-- <h1>{% if category %}{{ category.name }}{% else %}Projects{% endif %}</h1> -->
-            {% for project in projects %}
-                <div class="item">
-                    {% load thumbnail %}
-                    {% thumbnail project.image "215x150" crop="center" as pim %}
-                        <a href="{{ project.get_absolute_url }}">
-                            <img src="{% if pim %}{{ pim.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
-                        </a>
-                        <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
-                    {% endthumbnail %}
+        <div id="main">
+            <h3>{% if category %}{{ category.name }}{% else %}All projects{% endif %}</h3>
+            <div class="row main">
+                {% for project in projects %}
+                <!-- <div class="columns col-sm-5 col-md-3 col-l-4 col-lg-3"> -->
+                <div class="columns c-12 c-5 c-4 c-3">
+                    <div class="item">
+                        {% load thumbnail %}
+                        {% thumbnail project.image "215x150" crop="center" as pim %}
+                            <a href="{{ project.get_absolute_url }}">
+                                <img src="{% if pim %}{{ pim.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+                            </a>
+                            <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+                        {% endthumbnail %}
+                    </div>
                 </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
+            
         </div>
+
     </div>
 
 {% endblock %}
