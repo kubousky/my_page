@@ -11,21 +11,23 @@
 
         <div id="sidebar">
             <ul>
-                <li><a id="invisible-up" href=""></a></li>
+                <li><a id="invisible-up"></a></li>
                 <li {% if not category %}class="selected"{% endif %}>
-                    <a href="{% url "portfolio:project_list" %}">All</a>
+                    <a id="all" href="{% url "portfolio:project_list" %}">All</a>
                 </li>
                 {% for c in categories %}
                     <li {% if category.slug == c.slug %}class="selected"{% endif %}>
                         <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
                     </li>
                 {% endfor %}
-                <li><a id="invisible-down" href=""></a></li>
+
+                <li><a id="invisible-down"></a></li>
             </ul>
         </div>
 
         <div id="main">
             <h3>{% if category %}{{ category.name }}{% else %}All projects{% endif %}</h3>
+            <p id="line"></p>
             <div class="row main">
                 {% for project in projects %}
                 <!-- <div class="columns col-sm-5 col-md-3 col-l-4 col-lg-3"> -->

@@ -39,6 +39,8 @@ def categories(request, category_slug=None):
 def project_list(request, category_slug=None):
     category = None
     categories = Category.objects.all()
+    backend = Category.objects.get(slug="backend")
+    frontend = Category.objects.get(slug="frontend")
     projects = Project.objects.all()
     if category_slug:
         category = get_object_or_404(Category, slug=category_slug)
@@ -47,7 +49,7 @@ def project_list(request, category_slug=None):
                     'portfolio/projects/list.html',
                     {'category': category,
                     'categories': categories,
-                    'projects': projects})
+                    'projects': projects, 'backend': backend, 'frontend': frontend})
 
 def project_detail(request, id, slug):
     project = get_object_or_404(Project,
