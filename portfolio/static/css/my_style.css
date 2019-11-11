@@ -187,7 +187,7 @@ html,body {
 #extra_1_2, #extra_2_2 p{
     text-align: justify;
 }
-/* ################################  section   */
+/* ################################    */
 
 .separator{
     width:85%;
@@ -428,7 +428,8 @@ header p{
 }
 
 #main h3{
-    font-family: 'Telex', sans-serif;
+    /* font-family: 'Telex', sans-serif; */
+    font-family: 'Slabo 13px', serif;
 }
 #line {width:215px; border: solid rgb(185, 184, 184) 1px}
 
@@ -450,6 +451,123 @@ header p{
     text-decoration: none;
     color: rgb(185, 184, 184);
 }
+
+/* ############################################   contact # */
+
+#form{
+    padding-top: 70px;
+    padding-left: 50px;
+    color: black;
+    font-family: 'Slabo 13px', serif;
+}
+.form-control{
+    width: 270px;
+    border-radius: 0%;
+}
+
+#inputText2{
+    height: 100px;
+}
+
+#send-btn{
+    border: solid #FD4549 2px;
+    color: #FD4549;
+    background: transparent;
+    width:70px;
+}
+#send-btn:hover{
+    cursor: pointer;
+}
+
+#form_2{
+    padding-top: 20px;
+    padding-left: 50px;
+    font-family: 'Slabo 13px', serif;
+    height: 200px;
+    background-color: #E9F5F5;
+}
+
+#contact-down h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #CBE4E8;
+    font-size: 70px;
+}
+
+#social-media {
+    float: right;
+    transform: translatez(0);
+    padding-right: 35px;
+    margin-bottom: 0px;
+    padding-top: 70px;
+}
+
+#social-media-down{
+    transform: translatez(0);
+    background-color: #E9F5F5;
+}
+#social-media li {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-bottom: 7px;
+    list-style: none;
+}
+
+#social-media li div {
+    border: solid #FD4549 3px;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+#social-media li a{
+    color: rgb(185, 184, 184);;
+}
+
+#social-media li div:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    border-radius: 0;
+}
+/* ################################ */
+
+#social-media-down{
+    transform: translatez(0);
+    background-color: #E9F5F5;
+}
+#social-media_2 li {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 7px;
+    list-style: none;
+}
+
+#social-media_2 li div {
+    border: solid #FD4549 3px;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #E9F5F5;;
+    transition: all 0.5s ease;
+}
+#social-media_2 li a{
+    color: black;
+}
+#social-media_2 li div:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    border-radius: 0;
+}
+
+/* ####################################################   about # */
 
 @media only screen and (max-width: 370px) and (min-width: 320px) {
     .navbar{padding-left: 0;}
@@ -532,9 +650,38 @@ header p{
     #contact{float: left;}
     #contact a{float: left;}
 }
+
+@media only screen and (max-width: 575px) {
+    #form {padding-top: 40px;}
+    #form_2 {height: 150px}
+    #contact-down h3{font-size: 45px;}
+    #social-media {display: none}
+    #social-media_2 {margin-left: 10px;}
+    #social-media_2 li {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin-right: 14px;}
+    #social-media_2 li div {
+        width: 45px;
+        height: 45px;
+        font-size: 21px;
+        line-height: 35px;
+    }
+}
+@media only screen and (min-width: 576px) {
+    #social-media-down {display: none}
+}
+
 @media only screen and (min-width: 751px){
     .col-md-5 {width: 41.66%;}
     .col-md-6 {width: 50%;}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    #right-col{padding-right:0;}
+    #social-media { padding-top: 90px; padding-right:0;}
+    #social-media li {margin-bottom: 10px;}
 }
 
 @media only screen and (max-width: 849px){
