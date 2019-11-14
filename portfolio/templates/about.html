@@ -1,32 +1,47 @@
 {% extends "base.html" %}
+{% load static %}
+
+
 
 {% block title %}about{% endblock %}
  
 {% block content %}
-            about me!
-            <div class="a d-flex p-2 bd-highlight">I'm a flexbox container!</div>
-            <div class="a d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
-            <div class="d-flex align-content-stretch flex-wrap">
-                <div class="a p-2 bd-highlight">Flex item 1</div>
-                <div class="a p-2 bd-highlight">Flex item 2</div>
-                <div class="a p-2 bd-highlight">Flex item 3</div>
-                <div class="a p-2 bd-highlight">Flex item 1</div>
-                <div class="a p-2 bd-highlight">Flex item 2</div>
-                <div class="a p-2 bd-highlight">Flex item 3</div>
-                <div class="a p-2 bd-highlight">Flex item 1</div>
-                <div class="a p-2 bd-highlight">Flex item 2</div>
-                <div class="a p-2 bd-highlight">Flex item 3</div>
-                <div class="a p-2 bd-highlight">Flex item 1</div>
-                <div class="a p-2 bd-highlight">Flex item 2</div>
-                <div class="a p-2 bd-highlight">Flex item 3</div>
-                <div class="a p-2 bd-highlight">Flex item 1</div>
-                <div class="a p-2 bd-highlight">Flex item 2</div>
-                <div class="a p-2 bd-highlight">Flex item 3</div>
-                <div class="a p-2 bd-highlight">Flex item 1</div>
-                <div class="a p-2 bd-highlight">Flex item 2</div>
-                <div class="a p-2 bd-highlight">Flex item 3</div>
-            </div>
-
-
+<section id="about">
+        <div id="row-1" class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-3">
+                        <div id="profesor">
+                                <img src="{% static "img/profesor.png" %}" style="width:150px;"></a>
+                                <h5>The best way to understand a concept is to explain it to someone else. Check my students' <a href=""></a>reviews</a></h5>
+                        </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-3">
+                        <div id="kitesurfing">
+                                <img src="{% static "img/kitesurfing.jpg" %}" style="width:300px;">
+                                <h5>..................... ............................ ....................................</h5>
+                        </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-3">
+                        <h5>.....................................................................................</h5>
+                </div>
+        </div>
+        <div id="row-2" class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-3">
+                        <img id="snowboard" src="{% static "img/snowboard.jpg" %}" style="width:300px;">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-3">
+                        <h5>.......................................................... .........................</h5>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-3">
+                        <img id="voyager" src="{% static "img/voyager.jpg" %}" style="width:300px;">
+                </div>
+        </div>
+        <div id="row-3" class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-3">
+                        <h5>................................................</h5>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-3">
+                        <img id="voyager" src="{% static "img/polonia.png" %}" style="width:300px;">
+                </div>
+        </div>
+</section>
 
 {% endblock %}
