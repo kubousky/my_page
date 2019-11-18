@@ -8,7 +8,3 @@ jQuery(function($){
 $(window).on('resize',function(){location.reload();
 });
 
-//refresh once change page  !!!!
-setTimeout(function(){
-    location.reload();
-},3000);
