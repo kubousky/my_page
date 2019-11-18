@@ -567,18 +567,47 @@ font-size: 18px;
 }
 
 /* ####################################################   about # */
-.row h5{font-family: 'Slabo 13px', serif;}
-#profesor, #kitesurfing{border: solid black 1px; display: inline-flex;}
-
-
+#about{
+    margin:30px;
+}
+#me p{
+    line-height: 1.8; 
+    text-indent: 25px;
+}
+#about p{
+    text-align: justify; 
+    padding: 10px;
+    /* border: solid green 1px; */
+    font-size: 14px;
+}
+#about img{
+    padding: 10px;
+}
+.row #teacher a:hover{
+    cursor: pointer; 
+    text-decoration: none;
+}
+#teacher, #kitesurfing, #travel, #snow, #cinema, #diving, #poland{
+    border: 1px solid rgb(185, 184, 184); 
+    display: inline-flex;
+}
+#row-1, #row-2, #row-3 {
+    margin-bottom: 0px;
+    /* border: solid black 1px; */
+}
+.col-about {
+    padding: 10px;
+     /* border: solid red 1px; */
+}
 
 @media only screen and (max-width: 370px) and (min-width: 320px) {
     .navbar{padding-left: 0;}
 }
 @media only screen and (max-width: 400px) {
     .btn-group a{padding: 15px 18px;font-size: 15px;}
+    .I-am #about-me #hello #hello_2 #logo_small h1{font-size: 85px;}
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 460px) and (min-width: 401px){
     .I-am #about-me #hello #hello_2 #logo_small h1{font-size: 95px;}
 }
 
@@ -733,5 +762,25 @@ font-size: 18px;
     .highlighted .project #project_4{float: right;}
 }
 
+@media only screen and (max-width: 1203px){
+    .col-about-s-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 1246px) and (min-width: 1204px){  
+    #about p{font-size: 13px;}
+}
+@media only screen and (max-width: 1329px) and (min-width: 1204px) {
+    .col-about-m-3 {width: 25%;}
+    .col-about-m-3_2 {width: 27.5%;}
+    .col-about-m-3_5 {width: 30%;}
+    .col-about-m-4 {width: 33.33%;}
+    .col-about-m-4_5 {width: 36%;}
+    .col-about-m-5 {width: 41.66%;}
+}
+@media only screen and (min-width: 1330px) {
+    .col-about-l-3 {width: 25%}
+    .col-about-l-4 {width: 33.33%}
+    .col-about-l-5 {width: 41.66%;}
+}
 
 
