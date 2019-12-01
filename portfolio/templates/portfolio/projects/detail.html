@@ -8,15 +8,18 @@
 {% block content %}
     <div id="project-detail">
         <div id="text-detail">
-            <h2>{{ project.name }}</h2>
-            <h5><a href="{{ project.category.get_absolute_url }}">{{ project.category }}</a></h5>               
-            {{ project.description|linebreaks }}   
-            <p>url: </p>     
-            <p>source code: </p>
+            <h5><a href="{{ project.category.get_absolute_url }}">{{ project.category }}</a></h5> 
+            <h2>{{ project.name|linebreaks }}</h2>
+            <p>web address: <a href="{{ project.url }}">{% if project.url %}{{ project.url }}{% else %}project in a deployment process{% endif %}</a></p>
+            <p>source code: <a href="{{ project.repository }}">{{ project.repository}}</a></p>
+            <p class="p-detail"></p>
+            {{ project.description|linebreaks }}    
+   
+            
         </div>
         <div id="img-detail">
             {% load thumbnail %}        
-            {% thumbnail project.image "300x210" crop="center" as pim %}
+            {% thumbnail project.image "350x230" crop="center" as pim %}
                 <img src="{% if pim %}{{ pim.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
             {% endthumbnail %}
         </div>

@@ -460,17 +460,31 @@ header p{
     width: 85%;
     margin-left: 3%;
     overflow: hidden;
-    border: solid black 1px;
+    /* border: solid black 1px; */
 }
 
 #text-detail{
     float: left;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     width: 55%;
 }
+
+#text-detail h5 a{
+    color: rgb(185, 184, 184);
+}
+
+#text-detail .p-detail{
+    width: 60%;
+    border: solid rgb(185, 184, 184) 1.4px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-top: 10px;
+}
+
 #img-detail{
     float: right;
-    border: solid red 1px;
+    /* border: solid black 1px; */
 }
 
 /* ############################################   contact # */
