@@ -487,6 +487,10 @@ header p{
     /* border: solid black 1px; */
 }
 
+p.hidden {
+    display: none;
+}
+
 /* ############################################   contact # */
 
 #form{
